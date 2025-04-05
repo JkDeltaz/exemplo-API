@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lightblue;
+}
+
+
+.topnav {
+    color: lavender;
+    display: flex
+}
+
+
+.search-container input{
+    font-size: 25px;
+    margin: 10px 0px 30px 30px;
+}
+
+.search-container button{
+    font-size: x-large;
+    margin: 10px 0px 30px 0px
+}
+
+label {
+    font-size: x-large;
+    color: black;
+}
+
+option, select {
+    font-size: large;
+}
+
+.topnav a {
+    font-size: x-large;
+    margin: 15px; 
+    margin-left: auto;
+}
+
+.resultado-pesquisa{
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    margin-left: 20px;
+}
+
+.item-pesquisa{
+    margin: 20px 10px 15px;
+    border: 2px solid;
+    min-width: 320px;
+    min-height: 320px
+}
+
+.item-pesquisa > h3, a{
+    padding: 0px 10px
+}

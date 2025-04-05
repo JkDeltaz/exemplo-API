@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastro.css') }}">
+{% endblock %}
+
+{% block body%}
+    <div class='cadastro'>
+        <form action="/auth/cadastro" method="POST" accept-charset="UTF-8">
+            <h1>Cadastro de Alunos</h1>
+            
+            <h3>Nome de Usuário: </h3>
+            <input type="text" name="username" required><br>
+            
+            <h3>RA do Aluno: </h3>
+            <input type="text" name="RA" required><br>
+            
+            <h3>Senha: </h3>
+            <input type="password" name="password" required><br>
+
+            <input type="submit" value="Confirmar Cadastro"><br>
+        </form>
+    </div>
+{% endblock %}
